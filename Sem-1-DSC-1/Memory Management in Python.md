@@ -24,8 +24,14 @@ Some ways for optimizing memory in Python:
 4. Frees up memory allocation for the objects in the discard list.
 
 Sources used:
-https://www.geeksforgeeks.org/memory-management-in-python/
+
+https://www.geeksforgeeks.org/memory-management-in-python/ 
+
 https://www.askpython.com/python/examples/memory-management-in-python
+
+
 https://wearecommunity.io/communities/tectoniques/articles/978
+
 https://scoutapm.com/blog/python-memory-management
+
 https://scoutapm.com/blog/python-garbage-collection

@@ -17,4 +17,15 @@ A generational garbage collection cycle contains the following steps -
 3. If an object is missing outside references, it is inserted into the discard list.
 4. Frees up memory allocation for the objects in the discard list.
 
+Some ways for optimizing memory in Python:
+1. Use Generators, Not Lists for Big Arrays: Because when working with lists, Python loads all the elements into memory, all at once. Generators, on the other hand, perform lazy evaluation i.e. they’ll return (yield) one element at a time, and therefore don’t need to load the whole sequence into memory at once
+2. Use Numpy (or similar libraries) for extensive mathematical operations as these libraries are developed to be extremely memory efficient and optimized in how their underlying lower-level code performs heavy mathematical operations.
+3. Use string formatting instead of '+' to concatenate strings. The reason for this is that strings are immutable in Python. For every ‘+’ operation in your statement, Python will create a new string in memory for the string pairs concatenated from left and right. So try Python’s string formatting using the % syntax or the .format( ) function, which is much more memory efficient.
+4. Frees up memory allocation for the objects in the discard list.
 
+Sources used:
+https://www.geeksforgeeks.org/memory-management-in-python/
+https://www.askpython.com/python/examples/memory-management-in-python
+https://wearecommunity.io/communities/tectoniques/articles/978
+https://scoutapm.com/blog/python-memory-management
+https://scoutapm.com/blog/python-garbage-collection
